@@ -1,290 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LandMarkd</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LandMarkd</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="navbar-fixed">
-        <nav class="teal">
-          <div class="container">
-            <div class="nav-wrapper">
-              <a href="#!" class="brand-logo">LandMarkd</a>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-               <ul class="right hide-on-med-and-down">
-                <li>
-                  <a href="#home">Home</a>
-                </li>
-                <li>
-                  <a href="#search">Search</a>
-                </li>
-                <li>
-                  <a href="#popular">Popular Places</a>
-                </li>
-              
-            
-              </ul>
-            </div>
-          </div>
-        </nav>
+  <div class="navbar-fixed">
+    <nav class="blue">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">LandMarkd</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#search">Search</a>
+            </li>
+            <li>
+              <a href="#popular">Popular Places</a>
+            </li>
+
+
+          </ul>
+        </div>
       </div>
-      <ul class="sidenav" id="mobile-demo">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#search">Search</a>
-        </li>
-        <li>
-          <a href="#popular">Popular Places</a>
-        </li>
- 
-      </ul>
-    
-      <!-- Section: Slider -->
-      <section class="slider">
-        <ul class="slides">
-          <li>
-            <img src="./img/Image 4-8-22 at 10.19 AM (1).jpg" alt="manhattan">
-            <div class="caption center-align">
-              <h2>Share your travel experience!</h2>
-             
-             
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#search">Search</a>
+    </li>
+    <li>
+      <a href="#popular">Popular Places</a>
+    </li>
+
+  </ul>
+
+  <!-- Section: Slider -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="./img/Image 4-8-22 at 10.19 AM (1).jpg" alt="manhattan">
+        <div class="caption center-align">
+          <h2>Share your travel experience!</h2>
+
+
+        </div>
+      </li>
+      <li>
+        <img
+          src="https://blog.hdwallsource.com/wp-content/uploads/2016/01/statue-of-liberty-desktop-wallpaper-48972-50609-hd-wallpapers.jpg"
+          alt="statue">
+        <div class="caption left-align">
+          <h2>Anywhere in the USA</h2>
+
+        </div>
+      </li>
+      <li>
+        <img src="https://www.diosdelsol.com/wp-content/uploads/reiseziele/41262Horseshoe%20Bend%20Grand%20Canyon.jpeg"
+          alt="canyon">
+        <div class="caption right-align">
+          <h2>Find your Wanderlust!</h2>
+
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Section: Search -->
+  <section id="search" class="section section-search blue darken-1 white-text center scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h3>Find Your Destination</h3>
+          <div class="input-field">
+            <input class="white grey-text autocomplete" placeholder="California, Hawaii, etc..." type="text"
+              id="autocomplete-input">
+            <input id="searchBtn" type="submit" value="Search" class="btn blue">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">room</i>
+            <h4>Pick Where</h4>
+            <p>Leave a review for any US landmark!</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">video_library</i>
+            <h4>Watch Videos</h4>
+            <p> Get excited for your upcoming adventure or relive your past one!</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">chat</i>
+            <h4>Write Reviews</h4>
+            <p>Tell us about your travels!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="popular" class="section section-popular scrollspy">
+    <div class="container">
+      <div class="row">
+        <h4 class="center">
+          <span class="blue-text">Popular Places</span>
+        </h4>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://images.squarespace-cdn.com/content/v1/5e0e65adcd39ed279a0402fd/1627422661797-QIMOL76SO962XLBHNZDU/7.jpg?format=2500w"
+                alt="santa monica">
+              <span class="card-title">Santa Monica, California</span>
             </div>
-          </li>
-          <li>
-            <img src="https://blog.hdwallsource.com/wp-content/uploads/2016/01/statue-of-liberty-desktop-wallpaper-48972-50609-hd-wallpapers.jpg" alt="statue">
-            <div class="caption left-align">
-              <h2>Anywhere in the USA</h2>
-              
-            </div>
-          </li>
-          <li>
-            <img src="https://www.diosdelsol.com/wp-content/uploads/reiseziele/41262Horseshoe%20Bend%20Grand%20Canyon.jpeg" alt="canyon">
-            <div class="caption right-align">
-              <h2>Find your Wanderlust!</h2>
-              
-            </div>
-          </li>
-        </ul>
-      </section>
-    
-      <!-- Section: Search -->
-      <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h3>Search Destinations</h3>
-              <div class="input-field">
-                <input class="white grey-text autocomplete" placeholder="California, Hawaii, etc..." type="text" id="autocomplete-input">
-              </div>
+            <div class="card-content">
+              <p>add wikipedia api here
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    
-      <!-- Section: Icon Boxes -->
-      <section class="section section-icons grey lighten-4 center">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m4">
-              <div class="card-panel">
-                <i class="material-icons large teal-text">room</i>
-                <h4>Pick Where</h4>
-                <p>5 + states to leave your review!</p>
-              </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/01/00/2b/the-strip.jpg?w=1200&h=-1&s=1"
+                alt="vegas">
+              <span class="card-title">Las Vegas, Nevada</span>
             </div>
-            <div class="col s12 m4">
-              <div class="card-panel">
-                <i class="material-icons large teal-text">store</i>
-                <h4>Watch Videos</h4>
-                <p> Get excited for your upcoming adventure or relive your past one</p>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card-panel">
-                <i class="material-icons large teal-text">airplanemode_active</i>
-                <h4>Write Reviews</h4>
-                <p>Tell us about your travels!</p>
-              </div>
+            <div class="card-content">
+              <p>add wikipedia api here
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    
-      <!-- Section: Popular -->
-      <section id="popular" class="section section-popular scrollspy">
-        <div class="container">
-          <div class="row">
-            <h4 class="center">
-              <span class="teal-text">Popular</span> Places</h4>
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="https://images.squarespace-cdn.com/content/v1/5e0e65adcd39ed279a0402fd/1627422661797-QIMOL76SO962XLBHNZDU/7.jpg?format=2500w" alt="santa monica">
-                  <span class="card-title">Santa Monica, California</span>
-                </div>
-                <div class="card-content">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                    delectus?
-                  </p>
-                </div>
-              </div>
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="https://www.fodors.com/wp-content/uploads/2018/11/10-Golden-Gate-Bridge.jpg" alt="golden">
+              <span class="card-title">San Francisco, California</span>
             </div>
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/01/00/2b/the-strip.jpg?w=1200&h=-1&s=1" alt="vegas">
-                  <span class="card-title">Las Vegas, Nevada</span>
-                </div>
-                <div class="card-content">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                    delectus?
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col s12 m4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="https://www.fodors.com/wp-content/uploads/2018/11/10-Golden-Gate-Bridge.jpg" alt="golden">
-                  <span class="card-title">San Francisco, California</span>
-                </div>
-                <div class="card-content">
-                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas aliquid fugiat corporis laudantium, architecto
-                    delectus?
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-         
-          </div>
-        </div>
-      </section>
-    
-      <!-- Section: Follow -->
-      <section class="section section-follow teal darken-2 white-text center">
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <h4>Follow LandMarkd</h4>
-              <p>Follow us on social media</p>
-              <a href="htttps://facebook.com" target="_blank" class="white-text">
-                <i class="fab fa-facebook fa-4x"></i>
-              </a>
-              <a href="htttps://twitter.com" target="_blank" class="white-text">
-                <i class="fab fa-twitter fa-4x"></i>
-              </a>
-              <a href="htttps://linkedin.com" target="_blank" class="white-text">
-                <i class="fab fa-linkedin fa-4x"></i>
-              </a>
-              <a href="htttps://googleplus.com" target="_blank" class="white-text">
-                <i class="fab fa-google-plus fa-4x"></i>
-              </a>
-              <a href="htttps://pinterest.com" target="_blank" class="white-text">
-                <i class="fab fa-pinterest fa-4x"></i>
-              </a>
+            <div class="card-content">
+              <p>add wikipedia api here
+              </p>
             </div>
           </div>
         </div>
-      </section>
-    
-      <!-- Section: Gallery -->
-      <section id="gallery" class="section section-gallery scrollspy">
-        <div class="container">
-          <h4 class="center">
-            <span class="teal-text">Photo </span> Gallery
-          </h4>
-          <div class="row">
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/ZTPC2VYFPFDIHBJ34LOQICTO7I.jpg" alt="rushmore">
-            </div>
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://cdn.getyourguide.com/img/location/5c09358575f6a.jpeg/68.jpg" alt="keywest">
-            </div>
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://wallpapercave.com/wp/wp2420919.jpg" alt="disney">
-            </div>
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://cdn.getyourguide.com/img/location/5c90e450cd56a.jpeg/88.jpg" alt="seattle">
-            </div>
-          </div>
-    
-          <div class="row">
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://www.viajarchicago.com/img/viajar-chicago-guia.jpg" alt="chicago">
-            </div>
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2019/05/GI_200440484-001_SanAntonio_Riverwalk.jpg" alt="san antonio">
-            </div>
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://www.tripsavvy.com/thmb/3it2GRMqxoxpTWtisl8QK0hbGEE=/3424x2568/smart/filters:no_upscale()/yosemite-falls-yosemite-national-park-california-usa-683750029-58b0dfc75f9b5860462db5b0.jpg" alt="yosemite">
-            </div>
-            <div class="col s12 m3">
-              <img class="materialboxed responsive-img" src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/147000/147437-Vail-Beaver-Creek-Ski-Area.jpg" alt="colorado">
-            </div>
-          </div>
-    
-         
-      </section>
-    
-      <!-- Section: Contact -->
-      <section id="contact" class="section section-contact scrollspy">
-        <div class="container">
-          <div class="row">
-            <div class="col s12 m6">
-              <div class="card-panel teal white-text center">
-                <i class="material-icons medium">email</i>
-                <h5>Contact Us For Booking</h5>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sed praesentium delectus. Sit, mollitia
-                  quo. Veniam repellat voluptas ipsum doloremque?</p>
-              </div>
-              <ul class="collection with-header">
-                <li class="collection-header">
-                  <h4>Location</h4>
-                </li>
-                <li class="collection-item">Travelville Agency</li>
-                <li class="collection-item">555 Beach rd, Suite 33</li>
-                <li class="collection-item">Miami FL, 55555</li>
-              </ul>
-            </div>
-            <div class="col s12 m6">
-              <div class="card-panel grey lighten-3">
-                <h5>Please fill out this form</h5>
-                <div class="input-field">
-                  <input type="text" placeholder="Name" id="name">
-                  <label for="name">Name</label>
-                </div>
-                <div class="input-field">
-                  <input type="email" placeholder="Email" id="email">
-                  <label for="email">Email</label>
-                </div>
-                <div class="input-field">
-                  <input type="text" placeholder="Phone" id="phone">
-                  <label for="phone">Phone</label>
-                </div>
-                <div class="input-field">
-                  <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
-                  <label for="message">Message</label>
-                </div>
-                <input type="submit" value="Submit" class="btn">
-              </div>
-            </div>
-          </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+
+  <section class="section section-follow blue darken-2 white-text center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h4>Follow LandMarkd</h4>
+          <p>Follow us on social media</p>
+          <a href="htttps://facebook.com" target="_blank" class="white-text">
+            <i class="fab fa-facebook fa-4x"></i>
+          </a>
+          <a href="htttps://twitter.com" target="_blank" class="white-text">
+            <i class="fab fa-twitter fa-4x"></i>
+          </a>
+          <a href="htttps://linkedin.com" target="_blank" class="white-text">
+            <i class="fab fa-linkedin fa-4x"></i>
+          </a>
+          <a href="htttps://googleplus.com" target="_blank" class="white-text">
+            <i class="fab fa-google-plus fa-4x"></i>
+          </a>
+          <a href="htttps://pinterest.com" target="_blank" class="white-text">
+            <i class="fab fa-pinterest fa-4x"></i>
+          </a>
         </div>
-      </section>
-    
-      <!-- Footer -->
-      <footer class="section teal darken-2 white-text center">
-        <p class="flow-text">Travelville &copy; 2018</p>
-      </footer>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="gallery" class="section section-gallery scrollspy">
+    <div class="container">
+      <h4 class="center">
+        <span class="blue-text">Photo </span> Gallery
+      </h4>
+      <div class="row">
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img"
+            src="https://arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/ZTPC2VYFPFDIHBJ34LOQICTO7I.jpg"
+            alt="rushmore">
+        </div>
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img"
+            src="https://cdn.getyourguide.com/img/location/5c09358575f6a.jpeg/68.jpg" alt="keywest">
+        </div>
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img" src="https://wallpapercave.com/wp/wp2420919.jpg" alt="disney">
+        </div>
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img"
+            src="https://cdn.getyourguide.com/img/location/5c90e450cd56a.jpeg/88.jpg" alt="seattle">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img" src="https://www.viajarchicago.com/img/viajar-chicago-guia.jpg"
+            alt="chicago">
+        </div>
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img"
+            src="https://traveler.marriott.com/es/wp-content/uploads/sites/2/2019/05/GI_200440484-001_SanAntonio_Riverwalk.jpg"
+            alt="san antonio">
+        </div>
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img"
+            src="https://www.tripsavvy.com/thmb/3it2GRMqxoxpTWtisl8QK0hbGEE=/3424x2568/smart/filters:no_upscale()/yosemite-falls-yosemite-national-park-california-usa-683750029-58b0dfc75f9b5860462db5b0.jpg"
+            alt="yosemite">
+        </div>
+        <div class="col s12 m3">
+          <img class="materialboxed responsive-img"
+            src="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/147000/147437-Vail-Beaver-Creek-Ski-Area.jpg"
+            alt="colorado">
+        </div>
+      </div>
+
+
+  </section>
+
+
+  <section id="contact" class="section section-contact scrollspy">
+    <div class="container">
+      <div class="card">
+        <h2>Most Recent Review</h2>
+        <p> Name: <span id="saved-name"></span></p>
+        <p>Landmark Visited: <span id="saved-landmark"></span></p>
+        <p>Date Visited: <span id="saved-Date"></span></p>
+        <p>Review: <span id="saved-message"></span></p>
+      </div>
+      <div class="col s12 m6">
+        <div class="card-panel grey lighten-3">
+          <h5>Please fill out this form</h5>
+          <div class="input-field">
+            <input type="text" placeholder="Name" id="name">
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="text" placeholder="Landmark" id="place">
+            <label for="place">Landmark Visited</label>
+          </div>
+          <div class="input-field">
+            <input type="date" placeholder="Date" id="Date">
+            <label for="message">Date Visited</label>
+          </div>
+          <div class="input-field">
+            <textarea class="materialize-textarea" placeholder="Enter Message" id="message"></textarea>
+            <label for="message">Blog your travel experience</label>
+          </div>
+          <input id="formBtn" type="submit" value="Submit" class="btn blue">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <footer class="section blue darken-2 white-text center">
+    <p class="flow-text">LandMarkd 2022</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./script.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./script.js"></script>
+
 </html>
