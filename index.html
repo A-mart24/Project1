@@ -5,9 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LandMarkd</title>
+  <title>LandMarkd &#127757;</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style type="text/css">* {cursor: url("https://cur.cursors-4u.net/mechanics/mec-1/mec34.cur"), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2005/04/22/mec34.html" target="_blank" title="Airplane"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Airplane" style="position:absolute; top: 0px; right: 0px;" ></a>
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,11 +17,11 @@
     <nav class="blue">
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">LandMarkd</a>
+          <a href="#!" class="brand-logo">LandMarkd &#127757;</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="#home">Home</a>
+              <a href="index.html" >Home</a>
             </li>
             <li>
               <a href="#search">Search</a>
@@ -37,7 +38,7 @@
   </div>
   <ul class="sidenav" id="mobile-demo">
     <li>
-      <a href="#home">Home</a>
+      <a href="index.html">Home</a>
     </li>
     <li>
       <a href="#search">Search</a>
@@ -100,30 +101,46 @@
     <div class="container">
       <div class="row">
         <div class="col s12 m4">
-          <div class="card-panel">
+          <div class="card-panel blue-text">
             <i class="material-icons large blue-text">room</i>
             <h4>Pick Where</h4>
             <p>Leave a review for any US landmark!</p>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card-panel">
+          <div class="card-panel blue-text">
             <i class="material-icons large blue-text">video_library</i>
             <h4>Watch Videos</h4>
             <p> Get excited for your upcoming adventure or relive your past one!</p>
           </div>
         </div>
         <div class="col s12 m4">
-          <div class="card-panel">
+          <div class="card-panel blue-text">
             <i class="material-icons large blue-text">chat</i>
-            <h4>Write Reviews</h4>
+            <h4><a href="#saved-name">Write Reviews</a></h4>
             <p>Tell us about your travels!</p>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  <!-- <div class="col s12 m7">
+    <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="https://lorempixel.com/100/190/nature/6">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+             -->
 
   <section id="popular" class="section section-popular scrollspy">
     <div class="container">
@@ -140,8 +157,7 @@
               <span class="card-title">Santa Monica, California</span>
             </div>
             <div class="card-content">
-              <p>add wikipedia api here
-              </p>
+              
             </div>
           </div>
         </div>
@@ -154,8 +170,7 @@
               <span class="card-title">Las Vegas, Nevada</span>
             </div>
             <div class="card-content">
-              <p>add wikipedia api here
-              </p>
+              
             </div>
           </div>
         </div>
@@ -166,8 +181,7 @@
               <span class="card-title">San Francisco, California</span>
             </div>
             <div class="card-content">
-              <p>add wikipedia api here
-              </p>
+              
             </div>
           </div>
         </div>
@@ -256,8 +270,8 @@
 
 
   <section id="contact" class="section section-contact scrollspy">
-    <div class="container">
-      <div class="card">
+    <div class="container ">
+      <div class="card blue lighten-5">
         <h2>Most Recent Review</h2>
         <p> Name: <span id="saved-name"></span></p>
         <p>Landmark Visited: <span id="saved-landmark"></span></p>
@@ -265,7 +279,7 @@
         <p>Review: <span id="saved-message"></span></p>
       </div>
       <div class="col s12 m6">
-        <div class="card-panel grey lighten-3">
+        <div class="card-panel blue lighten-5">
           <h5>Please fill out this form</h5>
           <div class="input-field">
             <input type="text" placeholder="Name" id="name">

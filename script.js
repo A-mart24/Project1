@@ -68,8 +68,6 @@ function locationLoad() {
           var pageKey = data.query.search[0].pageid
           console.log(wikiData.query.pages[pageKey].extract)
 
-
-
           popularEl.append('<p class ="blue" >' + wikiData.query.pages[pageKey].extract + '</p>')
           // descriptionEl.text(wikiData.query.pages[pageKey].extract)
         })
