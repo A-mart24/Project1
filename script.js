@@ -66,9 +66,15 @@ function wikiPull() {
         .then(function (wikiData) {
           var pageKey = data.query.search[0].pageid
           console.log(wikiData.query.pages[pageKey].extract)
+          var popularEl = $('#test')
+
+          popularEl.empty()
+          popularEl.text(wikiData.query.pages[pageKey].extract)
           // descriptionEl.text(wikiData.query.pages[pageKey].extract)
         })
     })
+
+
 }
 
 function saveForm() {
@@ -87,6 +93,9 @@ function saveForm() {
   localStorage.setItem('name', name.val())
   localStorage.setItem('landmark', landmark.val())
   localStorage.setItem('blog', blog.val())
+
+  renderBlog()
+
 }
 
 function renderBlog() {
