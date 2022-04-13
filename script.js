@@ -37,10 +37,11 @@ M.Autocomplete.init(ac, {
 searchTextEl = $('#autocomplete-input')
 searchBtnEl = $('#searchBtn')
 formBtnEl = $('#formBtn')
-
+var popularEl = $('#test')
 
 function locationLoad() {
 
+  popularEl.empty()
   var wikiUrl = 'https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=' + searchTextEl.val() + '&utf8=&format=json&origin=*'
 
 
@@ -66,71 +67,90 @@ function locationLoad() {
         .then(function (wikiData) {
           var pageKey = data.query.search[0].pageid
           console.log(wikiData.query.pages[pageKey].extract)
-          var popularEl = $('#test')
 
-          popularEl.empty()
-          popularEl.text(wikiData.query.pages[pageKey].extract)
+          popularEl.append('<p class ="blue" >' + wikiData.query.pages[pageKey].extract + '</p>')
           // descriptionEl.text(wikiData.query.pages[pageKey].extract)
         })
     })
+  var apikey = '563492ad6f91700001000001762d088d5ead45459359fd5c62d83861'
+  fetch(`https://api.pexels.com/videos/search?query=` + searchTextEl.val(),
+    {
+      method: "GET",
+      headers: {
 
+        Accept: "application/json",
+        Authorization: apikey,     //use the apikey you have generated
+      },
+
+    }).then(function (pexelResponse) {
+      return pexelResponse.json()
+    })
+
+    .then(function (pexelVidData) {
+      console.log(pexelVidData)
+      var pexelURL = pexelVidData.videos[0].video_files[0].link
+      popularEl.append('<iframe width="560" height="315" src="' + pexelURL + '"frameborder="0" allowfullscreen></iframe>')
+    })
     var apikey = '563492ad6f91700001000001762d088d5ead45459359fd5c62d83861'
     fetch("https://api.pexels.com/v1/search?query=" + searchTextEl.val(),
       {
         method: "GET",
         headers: {
-  
+ 
           Accept: "application/json",
           Authorization: apikey,     //use the apikey you have generated
         },
-  
+ 
       }).then(function (pexelResponse) {
         return pexelResponse.json()
       })
-  
+ 
       .then(function (pexelData) {
         console.log(pexelData)
         imgOneEl.attr("src", pexelData.photos[0].src.original)
         imgOneEl.attr("alt", pexelData.photos[0].alt)
-
+ 
         imgTwoEl.attr("src", pexelData.photos[1].src.original)
         imgTwoEl.attr("alt", pexelData.photos[1].alt)
-
+ 
         imgThreeEl.attr("src", pexelData.photos[2].src.original)
         imgThreeEl.attr("alt", pexelData.photos[2].alt)
-
+ 
         imgFourEl.attr("src", pexelData.photos[3].src.original)
         imgFourEl.attr("alt", pexelData.photos[3].alt)
-
+ 
         imgFiveEl.attr("src", pexelData.photos[4].src.original)
         imgFiveEl.attr("alt", pexelData.photos[4].alt)
-
+ 
         imgSixEl.attr("src", pexelData.photos[5].src.original)
         imgSixEl.attr("alt", pexelData.photos[5].alt)
-
+ 
         imgSevenEl.attr("src", pexelData.photos[6].src.original)
         imgSevenEl.attr("alt", pexelData.photos[6].alt)
-
+ 
         imgEightEl.attr("src", pexelData.photos[7].src.original)
         imgEightEl.attr("alt", pexelData.photos[7].alt)
       })
 }
+
+var imgOneEl = $('#img1')
 
 function saveForm() {
   console.log("working")
 
   var name = $('#name')
   var landmark = $('#place')
-  //var date = $('#date')
+  var date = $('#Date')
   var blog = $('#message')
 
-
+  console.log(date.val())
   console.log(name.val())
   console.log(landmark.val())
   console.log(blog.val())
 
   localStorage.setItem('name', name.val())
   localStorage.setItem('landmark', landmark.val())
+  localStorage.setItem('date', date.val())
   localStorage.setItem('blog', blog.val())
 
   renderBlog()
@@ -141,6 +161,7 @@ function renderBlog() {
 
   var savednameEl = $('#saved-name')
   var savedlandmarkEl = $('#saved-landmark')
+  var saveddateEl = $('#saved-Date')
   var savedmessageEl = $('#saved-message')
 
   if (localStorage.getItem('name') !== null) {
@@ -148,6 +169,9 @@ function renderBlog() {
   }
   if (localStorage.getItem('landmark') !== null) {
     savedlandmarkEl.text(localStorage.getItem('landmark'))
+  }
+  if (localStorage.getItem('date') !== null) {
+    saveddateEl.text(localStorage.getItem('date'))
   }
   if (localStorage.getItem('blog') !== null) {
     savedmessageEl.text(localStorage.getItem('blog'))
