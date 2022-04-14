@@ -21,3 +21,13 @@
   font-size: large;
   background: #E3F2FD;
 }
+@media screen and (max-width: 600px) {
+  .body {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+  }
+}
